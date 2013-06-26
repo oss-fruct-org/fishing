@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>gfx/header.png</file>
+        <file>gfx/fishing.png</file>
+        <file>gfx/shop.png</file>
+        <file>gfx/map_settings.png</file>
+        <file>gfx/fish_icon.png</file>
+        <file>gfx/hostel.png</file>
+        <file>gfx/location.png</file>
+    </qresource>
+</RCC>

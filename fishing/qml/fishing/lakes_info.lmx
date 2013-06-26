@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lm:lmx xmlns:lm="http://www.nokia.com/schemas/location/landmarks/1/0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.nokia.com/schemas/location/landmarks/1/0/ lmx.xsd">
+<lm:landmarkCollection>
+	<lm:landmark>
+		<lm:name>озеро Ватчелское</lm:name>
+		<lm:description></lm:description>
+		<lm:coordinates>
+			<lm:latitude>62.299976</lm:latitude>
+			<lm:longitude>33.423313</lm:longitude>
+		</lm:coordinates>
+	</lm:landmark>
+</lm:landmarkCollection>
+</lm:lmx>
