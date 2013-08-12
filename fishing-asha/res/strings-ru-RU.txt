@@ -1,0 +1,17 @@
+about|О программе
+back|Назад
+maintitle|Рыбалка в Карелии
+conerr|Ошибка соединения
+yes|Да
+no|Нет
+reconquest|Повторить соединение?
+geotype-0|Озера
+geotype-1|Магазины
+geotype-2|Базы отдыха
+infoitem|Информация
+mapitem|Показать на карте
+coords|Координаты
+address|Адрес
+tel|Телефон
+site|Сайт
+fish|Рыба

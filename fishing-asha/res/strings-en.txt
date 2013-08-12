@@ -1,0 +1,17 @@
+about|About
+back|Back
+maintitle|Karelia Fishing
+conerr|Connection Error
+yes|Yes
+no|No
+reconquest|Do you wish to reconnect?
+geotype-0|Lakes
+geotype-1|Shops
+geotype-2|Hostels
+infoitem|Information
+mapitem|Show on map
+coords|Coordinates
+address|Address
+tel|Telephone
+site|Site
+fish|Fish
