@@ -38,7 +38,7 @@ public class HostelChoiceListView extends BaseListView implements CommandListene
 
     public void commandAction(Command command, Displayable displayable) {
         if (command == back) {
-            getListener().changeView(MainController.HOSTELS_LIST_VIEW);
+            getListener().back();
         }
         if (command == SELECT_COMMAND) {
             switch (this.getSelectedIndex()) {

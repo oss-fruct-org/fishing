@@ -1,7 +1,6 @@
 package org.fruct.oss.kareliafishing.views;
 
 import javax.microedition.lcdui.Choice;
-import javax.microedition.lcdui.Command;
 import javax.microedition.lcdui.List;
 import org.fruct.oss.kareliafishing.Localization;
 
@@ -18,8 +17,10 @@ public class BaseListView extends List {
     private final BaseListView.Listener listener;
     private Localization strings;
     
-    public BaseListView(String title, Localization strings, BaseListView.Listener listener) {
+    public BaseListView(String title, Localization strings, 
+            BaseListView.Listener listener) {
         super(title, Choice.IMPLICIT);
+        this.setFitPolicy(Choice.TEXT_WRAP_ON);
         this.strings = strings;
         this.listener = listener;
     }
@@ -34,5 +35,7 @@ public class BaseListView extends List {
     
     public interface Listener {
         void changeView(int view);
+        
+        void back();
     }
 }

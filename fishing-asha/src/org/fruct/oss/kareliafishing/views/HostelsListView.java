@@ -1,6 +1,7 @@
 package org.fruct.oss.kareliafishing.views;
 
 import java.util.Vector;
+import javax.microedition.lcdui.Choice;
 import javax.microedition.lcdui.Command;
 import javax.microedition.lcdui.CommandListener;
 import javax.microedition.lcdui.Displayable;
@@ -20,7 +21,7 @@ public class HostelsListView extends BaseListView implements CommandListener {
 
     public HostelsListView(Localization strings, Vector hostels, Listener listener) {
         super(strings.localize("geotype-2", "Hostels"), strings, listener);
-        
+              
         back = new Command(strings.localize("back", "Back"), Command.BACK, 0);
         this.addCommand(back);
         
@@ -42,7 +43,7 @@ public class HostelsListView extends BaseListView implements CommandListener {
             getListener().changeView(MainController.HOSTEL_CHOISE_LIST_VIEW);
         }
         if (command == back) {
-            getListener().changeView(MainController.CATEGORY_LIST_VIEW);
+            getListener().back();
         }
     }
     

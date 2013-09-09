@@ -36,7 +36,7 @@ public class GeoObjectsParser extends DefaultHandler {
     }
     
     public void startDocument() throws SAXException {
-        System.out.println("Start parse lakes.xml...");
+        //System.out.println("Start parse lakes.xml...");
     }
     
     public void startElement(String namespaceURI, String localName, 
@@ -123,6 +123,9 @@ public class GeoObjectsParser extends DefaultHandler {
     }
     
     public void endDocument() {
-        System.out.println("Stop parse lakes.xml...");
+        model.getLakes().addElement(lake);
+        model.getShops().addElement(shop);
+        model.getHostels().addElement(hostel);
+        //System.out.println("Stop parse lakes.xml...");
     }     
 }

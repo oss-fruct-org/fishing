@@ -38,7 +38,7 @@ public class ShopChoiceListView extends BaseListView implements CommandListener 
 
     public void commandAction(Command command, Displayable displayable) {
         if (command == back) {
-            getListener().changeView(MainController.SHOPS_LIST_VIEW);
+            getListener().back();
         }
         if (command == SELECT_COMMAND) {
             switch (this.getSelectedIndex()) {

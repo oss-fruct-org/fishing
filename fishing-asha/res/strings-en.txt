@@ -1,4 +1,8 @@
 about|About
+abouttext1|Karelia Fishing v1.0
+abouttext2|© 2012 FRUCT laboratory in IT-Park Petrozavodsk State University (PetrSU).
+abouttext3|Special thanks to the following web-sites for the content http://vedlozero.ru and http://ticrk.ru
+abouttext4|For more information visit our site http://oss.fruct.org/projects/fishing
 back|Back
 maintitle|Karelia Fishing
 conerr|Connection Error
@@ -15,3 +19,7 @@ address|Address
 tel|Telephone
 site|Site
 fish|Fish
+all|All
+selectorTitle|Select type
+viwelist|View list
+noinfoava|No inforamation available

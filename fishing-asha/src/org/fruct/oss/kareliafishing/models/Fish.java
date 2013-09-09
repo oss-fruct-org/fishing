@@ -14,11 +14,13 @@ import javax.microedition.lcdui.Image;
  */
 public class Fish {
     
+    private String id;
     private String name;
     private String fishInfo;
     private Image picture;
 
     public Fish() {
+        id = "";
         name = "";
         fishInfo = "";
         picture = null;
@@ -30,6 +32,14 @@ public class Fish {
         this.picture = picture;
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+    
     public String getName() {
         return name;
     }

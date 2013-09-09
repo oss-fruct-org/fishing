@@ -18,6 +18,10 @@ public class DataModel {
     private Vector shops;
     private Vector fishes;
     
+    private int currentLake = 0;
+    private int currentShop = 0;
+    private int currentHostel = 0;
+    
     public static final int NUMBER_OF_GEOTYPES = 3;
     public static final String[] DEFAULT_GEOTYPES_LIST = {"Lakes", "Shops",
                                                             "Hostels"};
@@ -67,5 +71,29 @@ public class DataModel {
 
     public void setFishes(Vector fishes) {
         this.fishes = fishes;
+    }
+
+    public int getCurrentLake() {
+        return currentLake;
+    }
+
+    public int getCurrentShop() {
+        return currentShop;
+    }
+
+    public int getCurrentHostel() {
+        return currentHostel;
+    }
+
+    public void setCurrentLake(int currentLake) {
+        this.currentLake = currentLake;
+    }
+
+    public void setCurrentShop(int currentShop) {
+        this.currentShop = currentShop;
+    }
+
+    public void setCurrentHostel(int currentHostel) {
+        this.currentHostel = currentHostel;
     }
 }

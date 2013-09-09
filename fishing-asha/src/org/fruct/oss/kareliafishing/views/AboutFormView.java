@@ -3,9 +3,8 @@ package org.fruct.oss.kareliafishing.views;
 import javax.microedition.lcdui.Command;
 import javax.microedition.lcdui.CommandListener;
 import javax.microedition.lcdui.Displayable;
-import javax.microedition.lcdui.Image;
-import org.fruct.oss.kareliafishing.MainController;
 import org.fruct.oss.kareliafishing.Localization;
+import org.fruct.oss.kareliafishing.MainController;
 
 /**
  *
@@ -24,11 +23,22 @@ public class AboutFormView extends BaseFormView implements CommandListener {
         
         this.addCommand(BACK);
         this.setCommandListener(this);
+        
+        this.append(strings.localize("abouttext1", ""));
+        //this.append("\n");
+        this.append(strings.localize("abouttext2", ""));
+        this.append(strings.localize("abouttext3", ""));
+        //this.append("\n");
+        //this.append(strings.localize("abouttext4", ""));
+        //this.append("\n");
+        this.append(strings.localize("abouttext4", ""));
+        //this.append("\n");
+        //this.append(strings.localize("abouttext6", ""));
     }
   
     public void commandAction(Command command, Displayable displayable) {
         if (command == BACK) {
-            getListener().changeView(MainController.CATEGORY_LIST_VIEW);
+            getListener().back();
         }
     }
 

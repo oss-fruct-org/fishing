@@ -40,7 +40,7 @@ public class FishesListView extends BaseListView implements CommandListener {
             getListener().changeView(MainController.FISH_INFO_FORM_VIEW);
         }
         if (command == back) {
-            getListener().changeView(MainController.LAKE_CHOISE_LIST_VIEW);
+            getListener().back();
         }
     }  
 }

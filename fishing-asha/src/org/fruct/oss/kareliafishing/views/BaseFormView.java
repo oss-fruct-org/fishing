@@ -32,5 +32,7 @@ public class BaseFormView extends Form {
     
     public interface Listener {
         void changeView(int view);
+        
+        void back();
     }
 }

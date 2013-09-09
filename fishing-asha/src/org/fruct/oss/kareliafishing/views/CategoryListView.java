@@ -19,15 +19,15 @@ public class CategoryListView extends BaseListView implements CommandListener{
     public static final int SHOP_ITEM = 1;
     public static final int HOSTEL_ITEM = 2;
     
-    private Command about;
-            
+    private Command back;
+             
     public CategoryListView(Localization strings, DataModel model, 
             BaseListView.Listener listener) {
-        super(strings.localize("maintitle", "Karelia Fishing"), strings, listener);
+        super(strings.localize("all", "All"), strings, listener);
         
-        about = new Command(strings.localize("about", "About"), Command.SCREEN, 1);
-        this.addCommand(about);
-        
+        back = new Command(strings.localize("back", "Back"), Command.BACK, 0);
+        this.addCommand(back);
+                 
         this.setCommandListener(this);
 
         initUI(model);
@@ -41,21 +41,21 @@ public class CategoryListView extends BaseListView implements CommandListener{
 
     public void commandAction(Command command, Displayable displayable) {
         if (command == SELECT_COMMAND) {
-            switch (this.getSelectedIndex()) {
-                case LAKE_ITEM:
-                    getListener().changeView(MainController.LAKES_LIST_VIEW);
-                    break;
-                case SHOP_ITEM:
-                    getListener().changeView(MainController.SHOPS_LIST_VIEW);
-                    break;
-                case HOSTEL_ITEM:
-                    getListener().changeView(MainController.HOSTELS_LIST_VIEW);
-                    break;
-                default:
-                    System.out.println("Index was not recognized");
-            }
-        } else if (command == about) {
-            getListener().changeView(MainController.ABOUT_VIEW);
+                switch (this.getSelectedIndex()) {
+                    case LAKE_ITEM:
+                        getListener().changeView(MainController.LAKES_LIST_VIEW);
+                        break;
+                    case SHOP_ITEM:
+                        getListener().changeView(MainController.SHOPS_LIST_VIEW);
+                        break;
+                    case HOSTEL_ITEM:
+                        getListener().changeView(MainController.HOSTELS_LIST_VIEW);
+                        break;
+                    default:
+                        System.out.println("Index was not recognized");
+                } 
+        } else if (command == back) {
+            getListener().back();
         }
     }
 }

@@ -35,7 +35,7 @@ public class LakeInfoFormView extends BaseFormView implements CommandListener {
     
     public void commandAction(Command command, Displayable displayable) {
         if (command == back) {
-            getListener().changeView(MainController.LAKE_CHOISE_LIST_VIEW);
+            getListener().back();
         }
     }
 }

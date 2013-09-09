@@ -1,6 +1,8 @@
 package org.fruct.oss.kareliafishing;
 
+import java.io.IOException;
 import java.io.InputStream;
+import java.io.UnsupportedEncodingException;
 import javax.microedition.lcdui.Image;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
@@ -21,6 +23,7 @@ public class DataController {
     public Image fishingMarker;
     public Image shopMarker;
     public Image hostelMarker;
+    public Image splashScreenLogo;
 
     public DataController(Localization strings) {
         model = new DataModel(strings);        
@@ -32,6 +35,7 @@ public class DataController {
             fishingMarker = Image.createImage("/fishing.png");
             shopMarker = Image.createImage("/shop.png");
             hostelMarker = Image.createImage("/hostel.png");
+            splashScreenLogo = Image.createImage("/company-logo.png");
                       
             // parse lake.xml
             is = getClass().getResourceAsStream("/lakes.xml");
@@ -59,21 +63,30 @@ public class DataController {
             SAXParser parser = factory.newSAXParser();
             FishesParser fishesParser = new FishesParser(lake);
             parser.parse(is, fishesParser);
-            
+
             Fish fish;
+            InputStream imageStream;
             for (int i = 0; i < lake.getFishesInfo().size(); i++) {
                 fish = (Fish)lake.getFishesInfo().elementAt(i);
-                fish.setPicture(Image.createImage("/fishes/" + fish.getName() + ".jpg"));
-                System.out.println("loaded image: " + "/fishes/" + fish.getName() + ".jpg");
+
+                //tempNameString = new String(fish.getName().getBytes("UTF-8"),"UTF-8");
+                //fish.setPicture(Image.createImage(namePrefix + tempNameString + namePostfix));
+                imageStream = getClass().getResourceAsStream("/fishes/" + fish.getId() + ".jpg");
+                if (imageStream != null) {
+                    fish.setPicture(Image.createImage(imageStream));
+                    //System.out.println("loaded image: " + "/fishes/" + fish.getId() + ".jpg");
+                }
             }
         } catch (SAXException e) {
             System.out.println("SAXException");
             e.printStackTrace();
         } catch (NullPointerException e) {
             System.out.println("NullPointerException");
+        } catch (IOException e) {
+            System.out.println("IOException");
         } catch (Exception e) {
-            System.out.println("Something went wrong with loading fish data" + e.toString());
-            e.printStackTrace();
+            System.out.println("Something went wrong with loading fish data " + e.toString());
+            //e.printStackTrace();
         }
     }
     

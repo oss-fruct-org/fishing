@@ -17,20 +17,26 @@ public class Localization {
     /** The character used for separating the key from the value. */
     private static final char SEPARATOR_CHAR = '|';
     private static final String DEFAULT_LOCALE = "/strings-en.txt";
- 
+    
+    public static final String ENGLISH_LOCALE = "en";
+    public static final String RUSSIAN_LOCALE = "ru-RU";
+    
     /**
      * Constructor.
      */
     public Localization() {
         // Obtain the system locale
         locale = System.getProperty("microedition.locale");
+        //locale = "ru-RU";
         System.out.println("Locale: " + locale);
         String filename = "/strings-" + locale + ".txt";
         try {
             loadStrings(filename);
         } catch (IOException ex) {
             // TODO: Exception handling
+            System.out.println("IO exp localization");
         } catch (Exception ex) {
+            System.out.println("Exp localization");
         }
     }
  
@@ -43,7 +49,8 @@ public class Localization {
     private void loadStrings(final String filename) throws Exception {
         strings = new Hashtable(50);
         InputStreamReader reader = new InputStreamReader(
-            getClass().getResourceAsStream(filename), "windows-1251");
+            getClass().getResourceAsStream(filename), "UTF-8");
+            //getClass().getResourceAsStream(filename), "windows-1251");    
         String line = null;
         // Read a single line from the file. null represents the EOF.
         while ((line = readLine(reader)) != null) {
@@ -106,5 +113,8 @@ public class Localization {
         }
         return value;
     }
-    
+
+    public String getLocale() {
+        return locale;
+    }  
 }

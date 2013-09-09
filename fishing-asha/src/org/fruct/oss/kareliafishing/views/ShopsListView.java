@@ -42,7 +42,7 @@ public class ShopsListView extends BaseListView implements CommandListener {
             getListener().changeView(MainController.SHOP_CHOISE_LIST_VIEW);
         }
         if (command == back) {
-            getListener().changeView(MainController.CATEGORY_LIST_VIEW);
+            getListener().back();
         }
     }
     

@@ -40,7 +40,7 @@ public class HostelInfoFormView extends BaseFormView implements CommandListener 
 
     public void commandAction(Command command, Displayable displayable) {
         if (command == back) {
-            getListener().changeView(MainController.HOSTEL_CHOISE_LIST_VIEW);
+            getListener().back();
         }
     }   
 }

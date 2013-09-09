@@ -28,7 +28,7 @@ public class FishesParser extends DefaultHandler {
     }
     
     public void startDocument() throws SAXException {
-        System.out.println("Start parse fishinfo.xml...");        
+        //System.out.println("Start parse fishinfo.xml...");        
     }
     
     public void startElement(String namespaceURI, String localName, 
@@ -37,7 +37,7 @@ public class FishesParser extends DefaultHandler {
         if (atts.getLength() > 0) {
             if (atts.getQName(0).equals("lake")) {
                 if (atts.getValue(0).equals(lake.getName())) {
-                    System.out.print("Processing lake: ");
+                    //System.out.println("Processing lake: ");
                     /*try {
                         System.out.print(new String(lake.getName().getBytes("Cp1251"), 
                             0, lake.getName().getBytes().length, "Cp1251"));
@@ -49,11 +49,14 @@ public class FishesParser extends DefaultHandler {
                     processingLake = false;
                 }
             }
-            if (atts.getQName(0).equals("name") && processingLake) {
-                fish = new Fish();
-                fish.setName(atts.getValue(0));
-            } 
-        } 
+            if (atts.getLength() > 1) {
+                    if (atts.getQName(0).equals("name") && processingLake) {
+                        fish = new Fish();
+                        fish.setId(atts.getValue(1));
+                        fish.setName(atts.getValue(0));
+                    }
+            }
+        }
     }
     
     public void characters(char[] ch, int start, int length) 
@@ -75,6 +78,6 @@ public class FishesParser extends DefaultHandler {
     
     public void endDocument() {
         lake.setFishesInfo(fishesInfo);
-        System.out.println("Stop parse fishinfo.xml...");
+        //System.out.println("Stop parse fishinfo.xml...");
     }
 }

@@ -38,7 +38,7 @@ public class ShopInfoFormView extends BaseFormView implements CommandListener {
     
     public void commandAction(Command command, Displayable displayable) {
         if (command == back) {
-            getListener().changeView(MainController.SHOP_CHOISE_LIST_VIEW);
+            getListener().back();
         }
     }
 }

@@ -1,5 +1,11 @@
 package org.fruct.oss.kareliafishing.models;
 
+import com.nokia.maps.common.GeoCoordinate;
+import com.nokia.maps.map.MapFactory;
+import com.nokia.maps.map.MapMarker;
+import com.nokia.maps.map.Point;
+import javax.microedition.lcdui.Image;
+
 /**
  *
  * @author Nikita Davydovskii
@@ -11,19 +17,17 @@ package org.fruct.oss.kareliafishing.models;
 public class GeoObject {
     
     private String name;
-    private double latitude;
-    private double longitude;
+    private GeoCoordinate geoCoordinate;
+    private MapMarker marker;
 
     public GeoObject() {
         name = "";
-        latitude = 0.0;
-        longitude = 0.0;
+        geoCoordinate = new GeoCoordinate(0, 0, 0);
     }
     
     public GeoObject(String name, double latitude, double longitude) {
         this.name = name;
-        this.latitude = latitude;
-        this.longitude = longitude;
+        geoCoordinate = new GeoCoordinate(latitude, longitude, 0);
     }
     
     /*
@@ -34,22 +38,34 @@ public class GeoObject {
     }
 
     public double getLatitude() {
-        return latitude;
+        return geoCoordinate.getLatitude();
     }
 
     public double getLongitude() {
-        return longitude;
+        return geoCoordinate.getLongitude();
     }
     
     public void setName(String name) {
         this.name = name;
     }
 
+    public GeoCoordinate getGeoCoordinate() {
+        return geoCoordinate;
+    }
+    
     public void setLatitude(double latitude) {
-        this.latitude = latitude;
+        geoCoordinate.setLatitude(latitude);
     }
 
     public void setLongitude(double longitude) {
-        this.longitude = longitude;
-    }   
+        geoCoordinate.setLongitude(longitude);
+    }
+
+    public MapMarker getMarker() {
+        return marker;
+    }
+
+    public void setMarker(MapMarker marker) {
+        this.marker = marker;
+    }
 }
