@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Рыбалка в Карелии</string>
+    <string name="title_activity_main">Рыбалка в Карелии</string>
+
+    <string name="info">Информация</string>
+    <string name="fish">Рыба</string>
+    <string name="jumpto">Переместиться</string>
+    <string name="coords">Координаты:</string>
+    <string name="phone">Телефон:</string>
+    <string name="address">Адрес:</string>
+    <string name="site">Сайт:</string>
+
+    <string name="lakes">Озера</string>
+    <string name="hostels">Турбазы</string>
+    <string name="shops">Магазины</string>
+    <string name="filter">Фильтр</string>
+    <string name="allpoints">Все точки</string>
+
+    <string name="no_info">Описание отсутсвует</string>
+    <string name="help">Справка</string>
+
+    <string name="filter1">В фильтре можно выбрать типы объектов, которые будут отображаться на карте</string>
+    <string name="allpoints1">Открывает список всех объектов. При нажатии на элемент списка откроется окно с детальной информацией</string>
+    <string name="map_navi">Навигация по карте</string>
+    <string name="map_navi1">Перемещайте и увеличивайте карту пальцами. Нажмите на маркер объекта, чтобы открыть окно с информацией.</string>
+
+    <string name="jumpto1">Нажмите на кнопку, чтобы центрировать карту на выбранном объекте.</string>
+
+    <string name="about">О приложении</string>
+
+    <string name="full_desc">Карелия богата озерами и реками. Рыбалка в Карелии — замечательно проведенное время, спокойный отдых и возможность насладиться приятным свежим лесным воздухом.
+
+Наше приложение содержит интерактивную карту Карелии, с помощью которой любители рыбалки могут выбрать подходящее место для самостоятельной рыбалки или базу отдыха.
+
+Для многих озер представлена информация о видах рыб, периодах нереста и местах их обитания. Также на карте отображены рыболовные магазины для Петрозаводска, Кондопоги, Костомукши, Сегежи.</string>
+
+    <string name="grant">Приложение является частью гранта KA322 программы “Karelia ENPI CBC”, которая фондируется Европейским союзом, Российской федерацией и Республикой Финляндией.</string>
+
+    <string name="devs">Основной разработчик: Коломенский Роман</string>
+
+</resources>

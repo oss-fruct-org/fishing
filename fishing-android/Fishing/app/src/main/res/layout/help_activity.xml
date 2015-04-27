@@ -1,0 +1,192 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.fruct.oss.ikm.HelpTabActivity$PlaceholderFragment"
+    android:padding="8dp">
+
+
+    <!-- Zooming -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/map_navi"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:text="@string/map_navi1"
+        android:paddingBottom="16dp"
+        />
+
+
+    <!-- Mocking
+    <RelativeLayout
+        android:paddingBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/help_mock_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/mocking_title"
+            android:layout_alignParentTop="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:text="@string/mocking"
+            android:layout_below="@id/help_mock_1"
+            android:layout_toLeftOf="@+id/image_mock"
+            android:layout_alignParentLeft="true"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_mock"
+            android:src="@drawable/ic_action_search"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+-->
+
+    <!-- Routing -->
+    <RelativeLayout
+        android:paddingBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/help_routing_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/allpoints"
+            android:layout_alignParentTop="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:text="@string/allpoints1"
+            android:layout_below="@id/help_routing_1"
+            android:layout_toLeftOf="@+id/image"
+            android:layout_alignParentLeft="true"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image"
+            android:src="@drawable/ic_action_list"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <!-- Filter -->
+    <RelativeLayout
+        android:paddingBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/help_routing_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/filter"
+            android:layout_alignParentTop="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:text="@string/filter1"
+            android:layout_below="@id/help_routing_2"
+            android:layout_toLeftOf="@+id/image"
+            android:layout_alignParentLeft="true"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@id/image"
+            android:src="@drawable/ic_action_filter"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <!-- Filter -->
+    <RelativeLayout
+        android:paddingBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/help_jumpto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/jumpto"
+            android:layout_alignParentTop="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:text="@string/jumpto1"
+            android:layout_below="@id/help_jumpto"
+            android:layout_toLeftOf="@+id/image"
+            android:layout_alignParentLeft="true"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@id/image"
+            android:src="@drawable/ic_action_marker"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <!-- Control -
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/directions_title"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:text="@string/directions"
+        android:paddingBottom="16dp"
+        />
+    -->
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fishing</string>
+    <string name="title_activity_main">Fishing</string>
+
+    <string name="info">Info</string>
+    <string name="fish">Fish</string>
+    <string name="jumpto">Jump to</string>
+    <string name="coords">Coordinates:</string>
+    <string name="phone">Phone:</string>
+    <string name="address">Address:</string>
+    <string name="site">Site:</string>
+
+    <string name="lakes">Lakes</string>
+    <string name="hostels">Hostels</string>
+    <string name="shops">Shops</string>
+    <string name="filter">Filter</string>
+    <string name="allpoints">All points</string>
+
+    <string name="help">Help</string>
+    <string name="no_info">No information available</string>
+
+    <string name="filter1">Click Filter button to set objects types that are displayed </string>
+    <string name="allpoints1">Open list containing all objects. Click on any object to see its details</string>
+    <string name="map_navi">Map navigation</string>
+    <string name="map_navi1">Drag and scale map with fingers. Click on objects markers to see detailed info.</string>
+
+    <string name="jumpto1">Click Jump button to center map on the selected object</string>
+
+    <string name="about">About</string>
+
+    <string name="full_desc">Karelia is rich with lakes and rivers. Fishing in Karelia - spent a wonderful time relaxing holiday and the opportunity to enjoy a pleasant fresh forest air.
+
+Our app includes an interactive map of Karelia which helps fishing enthusiasts choose a suitable place for fishing or recreation.
+
+For many lakes information about the kinds of fish during the spawning season and their habitats is provided. Also map displayes fishing shops in Petrozavodsk, Kondopoga, Kostomuksha, Segezha.</string>
+
+    <string name="grant">This application is a part of grant KA332 of Karelia ENPI CBC programme, which is co-funded by the European Union, the Russian Federation and the Republic of Finland.</string>
+
+    <string name="devs">Main developer: Roman Kolomenskii</string>
+</resources>
